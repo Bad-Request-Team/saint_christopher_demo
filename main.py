@@ -523,10 +523,10 @@ class AccurateGPUAggressiveDrivingDetector:
 
 def main():
     detector = AccurateGPUAggressiveDrivingDetector()
-    model = YOLO("models/yolo11x.pt")
+    model = YOLO("models/yolo11l.pt")
     model.model.to(detector.device)
 
-    cap = cv2.VideoCapture("data/first_60_seconds.mp4")
+    cap = cv2.VideoCapture("data/first_15_seconds.mp4")
     frame_count = 0
 
     # Статистика
